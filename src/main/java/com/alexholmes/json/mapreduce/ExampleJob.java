@@ -116,7 +116,8 @@ public final class ExampleJob extends Configured implements Tool {
         String output = args[1];
 
         Configuration conf = super.getConf();
-
+//        conf.addResource(new Path("/Users/mediratta/software/hadoop-2.5.1/etc/hadoop/core-site.xml"));
+//        conf.addResource(new Path("/Users/mediratta/software/hadoop-2.5.1/etc/hadoop/hdfs-site.xml"));
         writeInput(conf, new Path(input));
 
         Job job = new Job(conf);

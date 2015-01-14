@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Anupams-MacBook-Pro.local" name="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" skipped="0" tests="5" time="6.721" timestamp="2014-10-09T08:05:07">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="ant.file.json-mapreduce" value="/Users/mediratta/code/json-mapreduce/build.xml" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ant.file.type.json-mapreduce" value="file" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/classes" />
+    <property name="user.country.format" value="IN" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/local/share/java/apache-ant" />
+    <property name="java.runtime.version" value="1.7.0_67-b01" />
+    <property name="test.build.dir" value="/Users/mediratta/code/json-mapreduce/build/test" />
+    <property name="user.name" value="mediratta" />
+    <property name="build.dir" value="/Users/mediratta/code/json-mapreduce/build" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="json-mapreduce" />
+    <property name="java.version" value="1.7.0_67" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="test.build.data" value="/Users/mediratta/code/json-mapreduce/build/test/data" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/Users/mediratta/code/json-mapreduce/build.xml" />
+    <property name="os.version" value="10.9.5" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.65-b04" />
+    <property name="ant.library.dir" value="/opt/local/share/java/apache-ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="user.home" value="/Users/mediratta" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/Users/mediratta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/mediratta/code/json-mapreduce/reports/junit/xml/TEST-com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader.xml crashfile=/Users/mediratta/code/json-mapreduce/junitvmwatcher6039463529444198985.properties propsfile=/Users/mediratta/code/json-mapreduce/junit4501693409724990166.properties" />
+    <property name="java.class.path" value="/Users/mediratta/code/json-mapreduce/build/classes:/Users/mediratta/code/json-mapreduce/build/test-classes:/Users/mediratta/code/json-mapreduce/lib/commons-io-2.0.1.jar:/Users/mediratta/code/json-mapreduce/lib/commons-lang-2.6.jar:/Users/mediratta/code/json-mapreduce/lib/commons-logging-1.1.1.jar:/Users/mediratta/code/json-mapreduce/lib/hadoop-core-0.20.2-cdh3u1.jar:/Users/mediratta/code/json-mapreduce/lib/junit-4.10.jar:/opt/local/share/java/apache-ant/lib/ant-launcher.jar:/opt/local/share/java/apache-ant/lib/ant.jar:/opt/local/share/java/apache-ant/lib/ant-junit.jar:/opt/local/share/java/apache-ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/rf/9cc8hj591qd7jkzlf9t39nqc0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Users/mediratta/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/mediratta/code/json-mapreduce" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/mediratta/code/json-mapreduce" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/opt/local/share/java/apache-ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="jar" />
+  </properties>
+  <testcase classname="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" name="complexSplit" time="6.096" />
+  <testcase classname="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" name="simple" time="0.01" />
+  <testcase classname="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" name="simpleSplit" time="0.025" />
+  <testcase classname="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" name="splitDownTheMiddle" time="0.012" />
+  <testcase classname="com.alexholmes.json.mapreduce.TestMultiLineJsonRecordReader" name="simpleSplitSmallBlock" time="0.125" />
+  <system-out><![CDATA[start = 0 len = 2
+start = 2 len = 2
+start = 4 len = 2
+start = 6 len = 2
+start = 8 len = 2
+start = 10 len = 2
+start = 12 len = 2
+start = 14 len = 2
+start = 16 len = 2
+start = 18 len = 2
+start = 20 len = 2
+start = 22 len = 2
+start = 24 len = 2
+start = 26 len = 2
+start = 28 len = 2
+start = 30 len = 2
+start = 32 len = 2
+start = 34 len = 2
+start = 36 len = 2
+start = 38 len = 2
+start = 40 len = 2
+start = 42 len = 2
+start = 44 len = 2
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 46 len = 2
+start = 48 len = 2
+start = 50 len = 2
+start = 52 len = 2
+start = 54 len = 2
+start = 56 len = 2
+start = 58 len = 2
+start = 60 len = 2
+start = 62 len = 2
+start = 64 len = 2
+start = 66 len = 2
+start = 68 len = 2
+start = 70 len = 2
+start = 72 len = 2
+start = 74 len = 2
+start = 76 len = 2
+start = 78 len = 2
+start = 80 len = 2
+start = 82 len = 2
+start = 84 len = 2
+start = 86 len = 2
+start = 88 len = 2
+start = 90 len = 2
+start = 92 len = 2
+start = 94 len = 2
+start = 96 len = 2
+start = 98 len = 2
+start = 100 len = 2
+start = 102 len = 2
+start = 104 len = 2
+start = 106 len = 2
+start = 108 len = 2
+start = 110 len = 2
+start = 112 len = 2
+start = 114 len = 2
+start = 116 len = 2
+start = 118 len = 2
+start = 120 len = 2
+start = 122 len = 2
+start = 124 len = 2
+start = 126 len = 2
+start = 128 len = 2
+start = 130 len = 2
+start = 132 len = 2
+start = 134 len = 2
+start = 136 len = 2
+start = 138 len = 2
+start = 140 len = 2
+start = 142 len = 2
+start = 144 len = 2
+start = 146 len = 2
+start = 148 len = 2
+start = 150 len = 2
+start = 152 len = 2
+start = 154 len = 2
+start = 156 len = 2
+start = 158 len = 2
+start = 160 len = 2
+start = 162 len = 2
+start = 164 len = 2
+start = 166 len = 2
+start = 168 len = 2
+start = 170 len = 2
+start = 172 len = 2
+start = 174 len = 2
+start = 176 len = 2
+start = 178 len = 2
+start = 180 len = 2
+start = 182 len = 2
+start = 184 len = 2
+start = 186 len = 2
+start = 188 len = 2
+start = 190 len = 2
+start = 192 len = 2
+start = 194 len = 2
+start = 196 len = 2
+start = 198 len = 2
+start = 200 len = 2
+start = 202 len = 2
+start = 204 len = 2
+start = 206 len = 2
+start = 208 len = 2
+start = 210 len = 2
+start = 212 len = 2
+start = 214 len = 2
+start = 216 len = 2
+start = 218 len = 2
+start = 220 len = 2
+start = 222 len = 2
+start = 224 len = 2
+start = 226 len = 2
+start = 228 len = 2
+start = 230 len = 2
+start = 232 len = 2
+start = 234 len = 2
+start = 236 len = 2
+start = 238 len = 2
+start = 0 len = 3
+start = 3 len = 3
+start = 6 len = 3
+start = 9 len = 3
+start = 12 len = 3
+start = 15 len = 3
+start = 18 len = 3
+start = 21 len = 3
+start = 24 len = 3
+start = 27 len = 3
+start = 30 len = 3
+start = 33 len = 3
+start = 36 len = 3
+start = 39 len = 3
+start = 42 len = 3
+start = 45 len = 3
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 3
+start = 51 len = 3
+start = 54 len = 3
+start = 57 len = 3
+start = 60 len = 3
+start = 63 len = 3
+start = 66 len = 3
+start = 69 len = 3
+start = 72 len = 3
+start = 75 len = 3
+start = 78 len = 3
+start = 81 len = 3
+start = 84 len = 3
+start = 87 len = 3
+start = 90 len = 3
+start = 93 len = 3
+start = 96 len = 3
+start = 99 len = 3
+start = 102 len = 3
+start = 105 len = 3
+start = 108 len = 3
+start = 111 len = 3
+start = 114 len = 3
+start = 117 len = 3
+start = 120 len = 3
+start = 123 len = 3
+start = 126 len = 3
+start = 129 len = 3
+start = 132 len = 3
+start = 135 len = 3
+start = 138 len = 3
+start = 141 len = 3
+start = 144 len = 3
+start = 147 len = 3
+start = 150 len = 3
+start = 153 len = 3
+start = 156 len = 3
+start = 159 len = 3
+start = 162 len = 3
+start = 165 len = 3
+start = 168 len = 3
+start = 171 len = 3
+start = 174 len = 3
+start = 177 len = 3
+start = 180 len = 3
+start = 183 len = 3
+start = 186 len = 3
+start = 189 len = 3
+start = 192 len = 3
+start = 195 len = 3
+start = 198 len = 3
+start = 201 len = 3
+start = 204 len = 3
+start = 207 len = 3
+start = 210 len = 3
+start = 213 len = 3
+start = 216 len = 3
+start = 219 len = 3
+start = 222 len = 3
+start = 225 len = 3
+start = 228 len = 3
+start = 231 len = 3
+start = 234 len = 3
+start = 237 len = 3
+start = 0 len = 4
+start = 4 len = 4
+start = 8 len = 4
+start = 12 len = 4
+start = 16 len = 4
+start = 20 len = 4
+start = 24 len = 4
+start = 28 len = 4
+start = 32 len = 4
+start = 36 len = 4
+start = 40 len = 4
+start = 44 len = 4
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 4
+start = 52 len = 4
+start = 56 len = 4
+start = 60 len = 4
+start = 64 len = 4
+start = 68 len = 4
+start = 72 len = 4
+start = 76 len = 4
+start = 80 len = 4
+start = 84 len = 4
+start = 88 len = 4
+start = 92 len = 4
+start = 96 len = 4
+start = 100 len = 4
+start = 104 len = 4
+start = 108 len = 4
+start = 112 len = 4
+start = 116 len = 4
+start = 120 len = 4
+start = 124 len = 4
+start = 128 len = 4
+start = 132 len = 4
+start = 136 len = 4
+start = 140 len = 4
+start = 144 len = 4
+start = 148 len = 4
+start = 152 len = 4
+start = 156 len = 4
+start = 160 len = 4
+start = 164 len = 4
+start = 168 len = 4
+start = 172 len = 4
+start = 176 len = 4
+start = 180 len = 4
+start = 184 len = 4
+start = 188 len = 4
+start = 192 len = 4
+start = 196 len = 4
+start = 200 len = 4
+start = 204 len = 4
+start = 208 len = 4
+start = 212 len = 4
+start = 216 len = 4
+start = 220 len = 4
+start = 224 len = 4
+start = 228 len = 4
+start = 232 len = 4
+start = 236 len = 4
+start = 0 len = 5
+start = 5 len = 5
+start = 10 len = 5
+start = 15 len = 5
+start = 20 len = 5
+start = 25 len = 5
+start = 30 len = 5
+start = 35 len = 5
+start = 40 len = 5
+start = 45 len = 5
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 50 len = 5
+start = 55 len = 5
+start = 60 len = 5
+start = 65 len = 5
+start = 70 len = 5
+start = 75 len = 5
+start = 80 len = 5
+start = 85 len = 5
+start = 90 len = 5
+start = 95 len = 5
+start = 100 len = 5
+start = 105 len = 5
+start = 110 len = 5
+start = 115 len = 5
+start = 120 len = 5
+start = 125 len = 5
+start = 130 len = 5
+start = 135 len = 5
+start = 140 len = 5
+start = 145 len = 5
+start = 150 len = 5
+start = 155 len = 5
+start = 160 len = 5
+start = 165 len = 5
+start = 170 len = 5
+start = 175 len = 5
+start = 180 len = 5
+start = 185 len = 5
+start = 190 len = 5
+start = 195 len = 5
+start = 200 len = 5
+start = 205 len = 5
+start = 210 len = 5
+start = 215 len = 5
+start = 220 len = 5
+start = 225 len = 5
+start = 230 len = 5
+start = 235 len = 5
+start = 0 len = 6
+start = 6 len = 6
+start = 12 len = 6
+start = 18 len = 6
+start = 24 len = 6
+start = 30 len = 6
+start = 36 len = 6
+start = 42 len = 6
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 6
+start = 54 len = 6
+start = 60 len = 6
+start = 66 len = 6
+start = 72 len = 6
+start = 78 len = 6
+start = 84 len = 6
+start = 90 len = 6
+start = 96 len = 6
+start = 102 len = 6
+start = 108 len = 6
+start = 114 len = 6
+start = 120 len = 6
+start = 126 len = 6
+start = 132 len = 6
+start = 138 len = 6
+start = 144 len = 6
+start = 150 len = 6
+start = 156 len = 6
+start = 162 len = 6
+start = 168 len = 6
+start = 174 len = 6
+start = 180 len = 6
+start = 186 len = 6
+start = 192 len = 6
+start = 198 len = 6
+start = 204 len = 6
+start = 210 len = 6
+start = 216 len = 6
+start = 222 len = 6
+start = 228 len = 6
+start = 234 len = 6
+start = 0 len = 7
+start = 7 len = 7
+start = 14 len = 7
+start = 21 len = 7
+start = 28 len = 7
+start = 35 len = 7
+start = 42 len = 7
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 49 len = 7
+start = 56 len = 7
+start = 63 len = 7
+start = 70 len = 7
+start = 77 len = 7
+start = 84 len = 7
+start = 91 len = 7
+start = 98 len = 7
+start = 105 len = 7
+start = 112 len = 7
+start = 119 len = 7
+start = 126 len = 7
+start = 133 len = 7
+start = 140 len = 7
+start = 147 len = 7
+start = 154 len = 7
+start = 161 len = 7
+start = 168 len = 7
+start = 175 len = 7
+start = 182 len = 7
+start = 189 len = 7
+start = 196 len = 7
+start = 203 len = 7
+start = 210 len = 7
+start = 217 len = 7
+start = 224 len = 7
+start = 231 len = 7
+start = 238 len = 2
+start = 0 len = 8
+start = 8 len = 8
+start = 16 len = 8
+start = 24 len = 8
+start = 32 len = 8
+start = 40 len = 8
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 8
+start = 56 len = 8
+start = 64 len = 8
+start = 72 len = 8
+start = 80 len = 8
+start = 88 len = 8
+start = 96 len = 8
+start = 104 len = 8
+start = 112 len = 8
+start = 120 len = 8
+start = 128 len = 8
+start = 136 len = 8
+start = 144 len = 8
+start = 152 len = 8
+start = 160 len = 8
+start = 168 len = 8
+start = 176 len = 8
+start = 184 len = 8
+start = 192 len = 8
+start = 200 len = 8
+start = 208 len = 8
+start = 216 len = 8
+start = 224 len = 8
+start = 232 len = 8
+start = 0 len = 9
+start = 9 len = 9
+start = 18 len = 9
+start = 27 len = 9
+start = 36 len = 9
+start = 45 len = 9
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 54 len = 9
+start = 63 len = 9
+start = 72 len = 9
+start = 81 len = 9
+start = 90 len = 9
+start = 99 len = 9
+start = 108 len = 9
+start = 117 len = 9
+start = 126 len = 9
+start = 135 len = 9
+start = 144 len = 9
+start = 153 len = 9
+start = 162 len = 9
+start = 171 len = 9
+start = 180 len = 9
+start = 189 len = 9
+start = 198 len = 9
+start = 207 len = 9
+start = 216 len = 9
+start = 225 len = 9
+start = 234 len = 6
+start = 0 len = 10
+start = 10 len = 10
+start = 20 len = 10
+start = 30 len = 10
+start = 40 len = 10
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 50 len = 10
+start = 60 len = 10
+start = 70 len = 10
+start = 80 len = 10
+start = 90 len = 10
+start = 100 len = 10
+start = 110 len = 10
+start = 120 len = 10
+start = 130 len = 10
+start = 140 len = 10
+start = 150 len = 10
+start = 160 len = 10
+start = 170 len = 10
+start = 180 len = 10
+start = 190 len = 10
+start = 200 len = 10
+start = 210 len = 10
+start = 220 len = 10
+start = 230 len = 10
+start = 0 len = 11
+start = 11 len = 11
+start = 22 len = 11
+start = 33 len = 11
+start = 44 len = 11
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 55 len = 11
+start = 66 len = 11
+start = 77 len = 11
+start = 88 len = 11
+start = 99 len = 11
+start = 110 len = 11
+start = 121 len = 11
+start = 132 len = 11
+start = 143 len = 11
+start = 154 len = 11
+start = 165 len = 11
+start = 176 len = 11
+start = 187 len = 11
+start = 198 len = 11
+start = 209 len = 11
+start = 220 len = 11
+start = 231 len = 9
+start = 0 len = 12
+start = 12 len = 12
+start = 24 len = 12
+start = 36 len = 12
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 12
+start = 60 len = 12
+start = 72 len = 12
+start = 84 len = 12
+start = 96 len = 12
+start = 108 len = 12
+start = 120 len = 12
+start = 132 len = 12
+start = 144 len = 12
+start = 156 len = 12
+start = 168 len = 12
+start = 180 len = 12
+start = 192 len = 12
+start = 204 len = 12
+start = 216 len = 12
+start = 228 len = 12
+start = 0 len = 13
+start = 13 len = 13
+start = 26 len = 13
+start = 39 len = 13
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 52 len = 13
+start = 65 len = 13
+start = 78 len = 13
+start = 91 len = 13
+start = 104 len = 13
+start = 117 len = 13
+start = 130 len = 13
+start = 143 len = 13
+start = 156 len = 13
+start = 169 len = 13
+start = 182 len = 13
+start = 195 len = 13
+start = 208 len = 13
+start = 221 len = 13
+start = 234 len = 6
+start = 0 len = 14
+start = 14 len = 14
+start = 28 len = 14
+start = 42 len = 14
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 56 len = 14
+start = 70 len = 14
+start = 84 len = 14
+start = 98 len = 14
+start = 112 len = 14
+start = 126 len = 14
+start = 140 len = 14
+start = 154 len = 14
+start = 168 len = 14
+start = 182 len = 14
+start = 196 len = 14
+start = 210 len = 14
+start = 224 len = 14
+start = 238 len = 2
+start = 0 len = 15
+start = 15 len = 15
+start = 30 len = 15
+start = 45 len = 15
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 60 len = 15
+start = 75 len = 15
+start = 90 len = 15
+start = 105 len = 15
+start = 120 len = 15
+start = 135 len = 15
+start = 150 len = 15
+start = 165 len = 15
+start = 180 len = 15
+start = 195 len = 15
+start = 210 len = 15
+start = 225 len = 15
+start = 0 len = 16
+start = 16 len = 16
+start = 32 len = 16
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 16
+start = 64 len = 16
+start = 80 len = 16
+start = 96 len = 16
+start = 112 len = 16
+start = 128 len = 16
+start = 144 len = 16
+start = 160 len = 16
+start = 176 len = 16
+start = 192 len = 16
+start = 208 len = 16
+start = 224 len = 16
+start = 0 len = 17
+start = 17 len = 17
+start = 34 len = 17
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 51 len = 17
+start = 68 len = 17
+start = 85 len = 17
+start = 102 len = 17
+start = 119 len = 17
+start = 136 len = 17
+start = 153 len = 17
+start = 170 len = 17
+start = 187 len = 17
+start = 204 len = 17
+start = 221 len = 17
+start = 238 len = 2
+start = 0 len = 18
+start = 18 len = 18
+start = 36 len = 18
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 54 len = 18
+start = 72 len = 18
+start = 90 len = 18
+start = 108 len = 18
+start = 126 len = 18
+start = 144 len = 18
+start = 162 len = 18
+start = 180 len = 18
+start = 198 len = 18
+start = 216 len = 18
+start = 234 len = 6
+start = 0 len = 19
+start = 19 len = 19
+start = 38 len = 19
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 57 len = 19
+start = 76 len = 19
+start = 95 len = 19
+start = 114 len = 19
+start = 133 len = 19
+start = 152 len = 19
+start = 171 len = 19
+start = 190 len = 19
+start = 209 len = 19
+start = 228 len = 12
+start = 0 len = 20
+start = 20 len = 20
+start = 40 len = 20
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 60 len = 20
+start = 80 len = 20
+start = 100 len = 20
+start = 120 len = 20
+start = 140 len = 20
+start = 160 len = 20
+start = 180 len = 20
+start = 200 len = 20
+start = 220 len = 20
+start = 0 len = 21
+start = 21 len = 21
+start = 42 len = 21
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 63 len = 21
+start = 84 len = 21
+start = 105 len = 21
+start = 126 len = 21
+start = 147 len = 21
+start = 168 len = 21
+start = 189 len = 21
+start = 210 len = 21
+start = 231 len = 9
+start = 0 len = 22
+start = 22 len = 22
+start = 44 len = 22
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 66 len = 22
+start = 88 len = 22
+start = 110 len = 22
+start = 132 len = 22
+start = 154 len = 22
+start = 176 len = 22
+start = 198 len = 22
+start = 220 len = 20
+start = 0 len = 23
+start = 23 len = 23
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 46 len = 23
+start = 69 len = 23
+start = 92 len = 23
+start = 115 len = 23
+start = 138 len = 23
+start = 161 len = 23
+start = 184 len = 23
+start = 207 len = 23
+start = 230 len = 10
+start = 0 len = 24
+start = 24 len = 24
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 24
+start = 72 len = 24
+start = 96 len = 24
+start = 120 len = 24
+start = 144 len = 24
+start = 168 len = 24
+start = 192 len = 24
+start = 216 len = 24
+start = 0 len = 25
+start = 25 len = 25
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 50 len = 25
+start = 75 len = 25
+start = 100 len = 25
+start = 125 len = 25
+start = 150 len = 25
+start = 175 len = 25
+start = 200 len = 25
+start = 225 len = 15
+start = 0 len = 26
+start = 26 len = 26
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 52 len = 26
+start = 78 len = 26
+start = 104 len = 26
+start = 130 len = 26
+start = 156 len = 26
+start = 182 len = 26
+start = 208 len = 26
+start = 234 len = 6
+start = 0 len = 27
+start = 27 len = 27
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 54 len = 27
+start = 81 len = 27
+start = 108 len = 27
+start = 135 len = 27
+start = 162 len = 27
+start = 189 len = 27
+start = 216 len = 24
+start = 0 len = 28
+start = 28 len = 28
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 56 len = 28
+start = 84 len = 28
+start = 112 len = 28
+start = 140 len = 28
+start = 168 len = 28
+start = 196 len = 28
+start = 224 len = 16
+start = 0 len = 29
+start = 29 len = 29
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 58 len = 29
+start = 87 len = 29
+start = 116 len = 29
+start = 145 len = 29
+start = 174 len = 29
+start = 203 len = 29
+start = 232 len = 8
+start = 0 len = 30
+start = 30 len = 30
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 60 len = 30
+start = 90 len = 30
+start = 120 len = 30
+start = 150 len = 30
+start = 180 len = 30
+start = 210 len = 30
+start = 0 len = 31
+start = 31 len = 31
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 62 len = 31
+start = 93 len = 31
+start = 124 len = 31
+start = 155 len = 31
+start = 186 len = 31
+start = 217 len = 23
+start = 0 len = 32
+start = 32 len = 32
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 64 len = 32
+start = 96 len = 32
+start = 128 len = 32
+start = 160 len = 32
+start = 192 len = 32
+start = 224 len = 16
+start = 0 len = 33
+start = 33 len = 33
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 66 len = 33
+start = 99 len = 33
+start = 132 len = 33
+start = 165 len = 33
+start = 198 len = 33
+start = 231 len = 9
+start = 0 len = 34
+start = 34 len = 34
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 68 len = 34
+start = 102 len = 34
+start = 136 len = 34
+start = 170 len = 34
+start = 204 len = 36
+start = 0 len = 35
+start = 35 len = 35
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 70 len = 35
+start = 105 len = 35
+start = 140 len = 35
+start = 175 len = 35
+start = 210 len = 30
+start = 0 len = 36
+start = 36 len = 36
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 72 len = 36
+start = 108 len = 36
+start = 144 len = 36
+start = 180 len = 36
+start = 216 len = 24
+start = 0 len = 37
+start = 37 len = 37
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 74 len = 37
+start = 111 len = 37
+start = 148 len = 37
+start = 185 len = 37
+start = 222 len = 18
+start = 0 len = 38
+start = 38 len = 38
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 76 len = 38
+start = 114 len = 38
+start = 152 len = 38
+start = 190 len = 38
+start = 228 len = 12
+start = 0 len = 39
+start = 39 len = 39
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 78 len = 39
+start = 117 len = 39
+start = 156 len = 39
+start = 195 len = 39
+start = 234 len = 6
+start = 0 len = 40
+start = 40 len = 40
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 80 len = 40
+start = 120 len = 40
+start = 160 len = 40
+start = 200 len = 40
+start = 0 len = 41
+start = 41 len = 41
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 82 len = 41
+start = 123 len = 41
+start = 164 len = 41
+start = 205 len = 35
+start = 0 len = 42
+start = 42 len = 42
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 84 len = 42
+start = 126 len = 42
+start = 168 len = 42
+start = 210 len = 30
+start = 0 len = 43
+start = 43 len = 43
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 86 len = 43
+start = 129 len = 43
+start = 172 len = 43
+start = 215 len = 25
+start = 0 len = 44
+start = 44 len = 44
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 88 len = 44
+start = 132 len = 44
+start = 176 len = 44
+start = 220 len = 20
+start = 0 len = 45
+start = 45 len = 45
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 90 len = 45
+start = 135 len = 45
+start = 180 len = 45
+start = 225 len = 15
+start = 0 len = 46
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 46 len = 46
+start = 92 len = 46
+start = 138 len = 46
+start = 184 len = 46
+start = 230 len = 10
+start = 0 len = 47
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 47 len = 47
+start = 94 len = 47
+start = 141 len = 47
+start = 188 len = 47
+start = 235 len = 5
+start = 0 len = 48
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 48 len = 48
+start = 96 len = 48
+start = 144 len = 48
+start = 192 len = 48
+start = 0 len = 49
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 49 len = 49
+start = 98 len = 49
+start = 147 len = 49
+start = 196 len = 44
+start = 0 len = 50
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 50 len = 50
+start = 100 len = 50
+start = 150 len = 50
+start = 200 len = 40
+start = 0 len = 51
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 51 len = 51
+start = 102 len = 51
+start = 153 len = 51
+start = 204 len = 36
+start = 0 len = 52
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 52 len = 52
+start = 104 len = 52
+start = 156 len = 52
+start = 208 len = 32
+start = 0 len = 53
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 53 len = 53
+start = 106 len = 53
+start = 159 len = 53
+start = 212 len = 28
+start = 0 len = 54
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 54 len = 54
+start = 108 len = 54
+start = 162 len = 54
+start = 216 len = 24
+start = 0 len = 55
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 55 len = 55
+start = 110 len = 55
+start = 165 len = 55
+start = 220 len = 20
+start = 0 len = 56
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 56 len = 56
+start = 112 len = 56
+start = 168 len = 56
+start = 224 len = 16
+start = 0 len = 57
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 57 len = 57
+start = 114 len = 57
+start = 171 len = 57
+start = 228 len = 12
+start = 0 len = 58
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 58 len = 58
+start = 116 len = 58
+start = 174 len = 58
+start = 232 len = 8
+start = 0 len = 59
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 59 len = 59
+start = 118 len = 59
+start = 177 len = 63
+start = 0 len = 60
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 60 len = 60
+start = 120 len = 60
+start = 180 len = 60
+start = 0 len = 61
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 61 len = 61
+start = 122 len = 61
+start = 183 len = 57
+start = 0 len = 62
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 62 len = 62
+start = 124 len = 62
+start = 186 len = 54
+start = 0 len = 63
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 63 len = 63
+start = 126 len = 63
+start = 189 len = 51
+start = 0 len = 64
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 64 len = 64
+start = 128 len = 64
+start = 192 len = 48
+start = 0 len = 65
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 65 len = 65
+start = 130 len = 65
+start = 195 len = 45
+start = 0 len = 66
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 66 len = 66
+start = 132 len = 66
+start = 198 len = 42
+start = 0 len = 67
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 67 len = 67
+start = 134 len = 67
+start = 201 len = 39
+start = 0 len = 68
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 68 len = 68
+start = 136 len = 68
+start = 204 len = 36
+start = 0 len = 69
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 69 len = 69
+start = 138 len = 69
+start = 207 len = 33
+start = 0 len = 70
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 70 len = 70
+start = 140 len = 70
+start = 210 len = 30
+start = 0 len = 71
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 71 len = 71
+start = 142 len = 71
+start = 213 len = 27
+start = 0 len = 72
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 72 len = 72
+start = 144 len = 72
+start = 216 len = 24
+start = 0 len = 73
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 73 len = 73
+start = 146 len = 73
+start = 219 len = 21
+start = 0 len = 74
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 74 len = 74
+start = 148 len = 74
+start = 222 len = 18
+start = 0 len = 75
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 75 len = 75
+start = 150 len = 75
+start = 225 len = 15
+start = 0 len = 76
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 76 len = 76
+start = 152 len = 76
+start = 228 len = 12
+start = 0 len = 77
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 77 len = 77
+start = 154 len = 77
+start = 231 len = 9
+start = 0 len = 78
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 78 len = 78
+start = 156 len = 84
+start = 0 len = 79
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 79 len = 79
+start = 158 len = 82
+start = 0 len = 80
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 80 len = 80
+start = 160 len = 80
+start = 0 len = 81
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 81 len = 81
+start = 162 len = 78
+start = 0 len = 82
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 82 len = 82
+start = 164 len = 76
+start = 0 len = 83
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 83 len = 83
+start = 166 len = 74
+start = 0 len = 84
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 84 len = 84
+start = 168 len = 72
+start = 0 len = 85
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 85 len = 85
+start = 170 len = 70
+start = 0 len = 86
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 86 len = 86
+start = 172 len = 68
+start = 0 len = 87
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 87 len = 87
+start = 174 len = 66
+start = 0 len = 88
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 88 len = 88
+start = 176 len = 64
+start = 0 len = 89
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 89 len = 89
+start = 178 len = 62
+start = 0 len = 90
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 90 len = 90
+start = 180 len = 60
+start = 0 len = 91
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 91 len = 91
+start = 182 len = 58
+start = 0 len = 92
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 92 len = 92
+start = 184 len = 56
+start = 0 len = 93
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 93 len = 93
+start = 186 len = 54
+start = 0 len = 94
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 94 len = 94
+start = 188 len = 52
+start = 0 len = 95
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 95 len = 95
+start = 190 len = 50
+start = 0 len = 96
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 96 len = 96
+start = 192 len = 48
+start = 0 len = 97
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 97 len = 97
+start = 194 len = 46
+start = 0 len = 98
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 98 len = 98
+start = 196 len = 44
+start = 0 len = 99
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 99 len = 99
+start = 198 len = 42
+start = 0 len = 100
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 100 len = 100
+start = 200 len = 40
+start = 0 len = 101
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 101 len = 101
+start = 202 len = 38
+start = 0 len = 102
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 102 len = 102
+start = 204 len = 36
+start = 0 len = 103
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 103 len = 103
+start = 206 len = 34
+start = 0 len = 104
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 104 len = 104
+start = 208 len = 32
+start = 0 len = 105
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 105 len = 105
+start = 210 len = 30
+start = 0 len = 106
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 106 len = 106
+start = 212 len = 28
+start = 0 len = 107
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 107 len = 107
+start = 214 len = 26
+start = 0 len = 108
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 108 len = 108
+start = 216 len = 24
+start = 0 len = 109
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 109 len = 109
+start = 218 len = 22
+start = 0 len = 110
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 110 len = 110
+start = 220 len = 20
+start = 0 len = 111
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 111 len = 111
+start = 222 len = 18
+start = 0 len = 112
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 112 len = 112
+start = 224 len = 16
+start = 0 len = 113
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 113 len = 113
+start = 226 len = 14
+start = 0 len = 114
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 114 len = 114
+start = 228 len = 12
+start = 0 len = 115
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 115 len = 125
+start = 0 len = 116
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 116 len = 124
+start = 0 len = 117
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 117 len = 123
+start = 0 len = 118
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 118 len = 122
+start = 0 len = 119
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 119 len = 121
+start = 0 len = 120
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 120 len = 120
+start = 0 len = 121
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 121 len = 119
+start = 0 len = 122
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 122 len = 118
+start = 0 len = 123
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 123 len = 117
+start = 0 len = 124
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 124 len = 116
+start = 0 len = 125
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 125 len = 115
+start = 0 len = 126
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 126 len = 114
+start = 0 len = 127
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 127 len = 113
+start = 0 len = 128
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 128 len = 112
+start = 0 len = 129
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 129 len = 111
+start = 0 len = 130
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 130 len = 110
+start = 0 len = 131
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 131 len = 109
+start = 0 len = 132
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 132 len = 108
+start = 0 len = 133
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 133 len = 107
+start = 0 len = 134
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 134 len = 106
+start = 0 len = 135
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 135 len = 105
+start = 0 len = 136
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 136 len = 104
+start = 0 len = 137
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 137 len = 103
+start = 0 len = 138
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 138 len = 102
+start = 0 len = 139
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 139 len = 101
+start = 0 len = 140
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 140 len = 100
+start = 0 len = 141
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 141 len = 99
+start = 0 len = 142
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 142 len = 98
+start = 0 len = 143
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 143 len = 97
+start = 0 len = 144
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 144 len = 96
+start = 0 len = 145
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 145 len = 95
+start = 0 len = 146
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 146 len = 94
+start = 0 len = 147
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 147 len = 93
+start = 0 len = 148
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 148 len = 92
+start = 0 len = 149
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 149 len = 91
+start = 0 len = 150
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 150 len = 90
+start = 0 len = 151
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 151 len = 89
+start = 0 len = 152
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 152 len = 88
+start = 0 len = 153
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 153 len = 87
+start = 0 len = 154
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 154 len = 86
+start = 0 len = 155
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 155 len = 85
+start = 0 len = 156
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 156 len = 84
+start = 0 len = 157
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 157 len = 83
+start = 0 len = 158
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 158 len = 82
+start = 0 len = 159
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 159 len = 81
+start = 0 len = 160
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 160 len = 80
+start = 0 len = 161
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 161 len = 79
+start = 0 len = 162
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 162 len = 78
+start = 0 len = 163
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 163 len = 77
+start = 0 len = 164
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 164 len = 76
+start = 0 len = 165
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 165 len = 75
+start = 0 len = 166
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 166 len = 74
+start = 0 len = 167
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 167 len = 73
+start = 0 len = 168
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 168 len = 72
+start = 0 len = 169
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 169 len = 71
+start = 0 len = 170
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 170 len = 70
+start = 0 len = 171
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 171 len = 69
+start = 0 len = 172
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 172 len = 68
+start = 0 len = 173
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 173 len = 67
+start = 0 len = 174
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 174 len = 66
+start = 0 len = 175
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 175 len = 65
+start = 0 len = 176
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 176 len = 64
+start = 0 len = 177
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 177 len = 63
+start = 0 len = 178
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 178 len = 62
+start = 0 len = 179
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 179 len = 61
+start = 0 len = 180
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 180 len = 60
+start = 0 len = 181
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 181 len = 59
+start = 0 len = 182
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 182 len = 58
+start = 0 len = 183
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 183 len = 57
+start = 0 len = 184
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 184 len = 56
+start = 0 len = 185
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 185 len = 55
+start = 0 len = 186
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 186 len = 54
+start = 0 len = 187
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 187 len = 53
+start = 0 len = 188
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 188 len = 52
+start = 0 len = 189
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 189 len = 51
+start = 0 len = 190
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 190 len = 50
+start = 0 len = 191
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 191 len = 49
+start = 0 len = 192
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 192 len = 48
+start = 0 len = 193
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 193 len = 47
+start = 0 len = 194
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 194 len = 46
+start = 0 len = 195
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 195 len = 45
+start = 0 len = 196
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 196 len = 44
+start = 0 len = 197
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 197 len = 43
+start = 0 len = 198
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 198 len = 42
+start = 0 len = 199
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 199 len = 41
+start = 0 len = 200
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 200 len = 40
+start = 0 len = 201
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 201 len = 39
+start = 0 len = 202
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 202 len = 38
+start = 0 len = 203
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 203 len = 37
+start = 0 len = 204
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 204 len = 36
+start = 0 len = 205
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 205 len = 35
+start = 0 len = 206
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 206 len = 34
+start = 0 len = 207
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 207 len = 33
+start = 0 len = 208
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 208 len = 32
+start = 0 len = 209
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 209 len = 31
+start = 0 len = 210
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 210 len = 30
+start = 0 len = 211
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 211 len = 29
+start = 0 len = 212
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 212 len = 28
+start = 0 len = 213
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 213 len = 27
+start = 0 len = 214
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 214 len = 26
+start = 0 len = 215
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 215 len = 25
+start = 0 len = 216
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 216 len = 24
+start = 0 len = 217
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 217 len = 23
+start = 0 len = 218
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 218 len = 22
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 240
+{"color":"red","v":"vv","a":true,"b":false,"d":null,"e":{"e1":"","":""},"f":[{"f1":"","f2":""},{"f1":"","f2":""}],"name":123.45,"g":[{"f1":"","f2":{"f11":[{"f12":{}},{},{}]}},{"f1":"","f2":""}]}
+start = 0 len = 20
+{"c": "a","v": "vv"}
+start = 0 len = 5
+{"c": "a","v": "vv"}
+start = 5 len = 5
+start = 10 len = 5
+start = 15 len = 5
+start = 0 len = 10
+{"c": "a"}
+start = 10 len = 10
+{"c": "b"}
+start = 0 len = 2
+start = 2 len = 2
+start = 4 len = 2
+start = 6 len = 2
+{"c": "a","v": "vv"}
+start = 8 len = 2
+start = 10 len = 2
+start = 12 len = 2
+start = 14 len = 2
+start = 16 len = 2
+start = 18 len = 2
+start = 20 len = 2
+start = 22 len = 2
+start = 24 len = 2
+start = 0 len = 3
+start = 3 len = 3
+start = 6 len = 3
+{"c": "a","v": "vv"}
+start = 9 len = 3
+start = 12 len = 3
+start = 15 len = 3
+start = 18 len = 3
+start = 21 len = 3
+start = 24 len = 2
+start = 0 len = 4
+start = 4 len = 4
+{"c": "a","v": "vv"}
+start = 8 len = 4
+start = 12 len = 4
+start = 16 len = 4
+start = 20 len = 4
+start = 24 len = 2
+start = 0 len = 5
+start = 5 len = 5
+{"c": "a","v": "vv"}
+start = 10 len = 5
+start = 15 len = 5
+start = 20 len = 5
+start = 25 len = 1
+start = 0 len = 6
+start = 6 len = 6
+{"c": "a","v": "vv"}
+start = 12 len = 6
+start = 18 len = 6
+start = 24 len = 2
+start = 0 len = 7
+{"c": "a","v": "vv"}
+start = 7 len = 7
+start = 14 len = 7
+start = 21 len = 5
+start = 0 len = 8
+{"c": "a","v": "vv"}
+start = 8 len = 8
+start = 16 len = 8
+start = 24 len = 2
+start = 0 len = 12
+{"c": "a","v": "vv"}
+start = 12 len = 12
+start = 24 len = 2
+start = 0 len = 26
+{"c": "a","v": "vv"}
+start = 0 len = 26
+{"c": "a","v": "vv"}
+]]></system-out>
+  <system-err><![CDATA[Oct 09, 2014 1:35:09 PM org.apache.hadoop.util.NativeCodeLoader <clinit>
+WARNING: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 09, 2014 1:35:09 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:09 PM org.apache.hadoop.io.compress.snappy.LoadSnappy <clinit>
+WARNING: Snappy native library not loaded
+Oct 09, 2014 1:35:09 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:09 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:09 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:10 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:11 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:12 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:13 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+Oct 09, 2014 1:35:14 PM org.apache.hadoop.mapreduce.lib.input.FileInputFormat listStatus
+INFO: Total input paths to process : 1
+]]></system-err>
+</testsuite>

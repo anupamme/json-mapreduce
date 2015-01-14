@@ -1,0 +1,20 @@
+{
+    "h1":[{
+            "reviewer_name":"anupam",
+            "review":"Stayed here for 2 nights, one night in the attic, one night in a normal room. Stayed here for 2 nights, one night in the attic, one night in a normal room."
+        },
+        {
+            "review_name":"gaurang",
+            "review":"Loved it! This is a very charming, very comfortable small hotel with a good location."
+        }
+    ],
+    "h2":[{
+            "reviewer_name":"anupam II",
+            "review":"Stayed here for 2 nights, one night in the attic, one night in a normal room. Stayed here for 2 nights, one night in the attic, one night in a normal room."
+        },
+        {
+            "review_name":"gaurang II",
+            "review":"Loved it! This is a very charming, very comfortable small hotel with a good location."
+        }
+    ]
+}
